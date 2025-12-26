@@ -762,6 +762,22 @@ main {
 
 /* ===== ADS & MANAGE ===== */
 
+
+.ad-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.ad-card p {
+  flex-grow: 1;       /* a szöveg kitölti a teret */
+}
+
+.ad-card strong {
+  margin-top: auto;  /* az ár lecsúszik az aljára */
+  text-align: center;
+}
+
+
 .ad-packages,
 .manage-packages {
   display: grid;
@@ -778,7 +794,23 @@ main {
   padding: 2.5rem;
   text-align: center;
   transition: transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+
 }
+
+
+.manage-card ul {
+  flex-grow: 1;      /* kitölti a maradék helyet */
+}
+
+.manage-card strong {
+  margin-top: auto; /* az aljára tolja */
+  text-align: center;
+  list-style: none;
+  margin-top: 3%;
+}
+
 
 .manage-card ul{
 
