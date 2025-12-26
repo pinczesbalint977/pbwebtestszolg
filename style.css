@@ -953,11 +953,13 @@ main {
     align-items: center;
     text-align: center;
     min-height: 100vh;
+
   }
 
   .abouttext h2 {
     font-size: 10rem;
     margin-top: 2rem;
+
   }
 
   .abouttext p {
@@ -988,6 +990,8 @@ main {
 @media (max-width: 768px) {
   .abouttext h2 {
     font-size: 7rem;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
   }
 
   .abouttext p {
