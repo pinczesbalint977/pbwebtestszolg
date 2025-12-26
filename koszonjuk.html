@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Új biztonsági meta tag-ek -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+  <title>Köszönjük az üzenetet | PBWeb</title>
+  <!-- Preload a CSS-t -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://pbweb.hu/koszonjuk.html">
+  <link rel="shortcut icon" href="/pic/p.png" type="image/png" />
+</head>
+<body>
+  <main class="thank" role="main">
+    <article>
+      <h1>Köszönjük az üzeneted!</h1>
+      <p>Hamarosan felvesszük veled a kapcsolatot. Átlagos válaszidőnk 24 órán belül van.</p>
+      
+      <!-- Biztonságosabb visszalépés -->
+      <a href="index.html" 
+         aria-label="Vissza a főoldalra" 
+         class="button"
+         rel="noopener noreferrer">
+        Vissza a főoldalra
+      </a>
+      
+    </article>
+  </main>
+  
+  <!-- Simple tracking - csak ha van GA -->
+  <script>
+    if (typeof ga !== 'undefined') {
+      ga('send', 'event', 'Contact', 'Submission', 'Thank You Page');
+    }
+  </script>
+</body>
+</html>

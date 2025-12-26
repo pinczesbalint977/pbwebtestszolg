@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /includes/
+Disallow: /config/
+
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /pic/
+Allow: /images/
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Sitemap
+Sitemap: https://pbweb.hu/sitemap.xml

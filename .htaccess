@@ -1,0 +1,24 @@
+# Általános karakterkódolás
+AddDefaultCharset UTF-8
+
+# Csak HTML fájlokra állítsuk be a tartalom típust és karakterkódolást
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Content-Type "text/html; charset=UTF-8"
+  </FilesMatch>
+</IfModule>
+
+# Gzip tömörítés
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+
+<IfModule mod_headers.c>
+    # X-Frame-Options beállítása (clickjacking védelem)
+    Header always set X-Frame-Options "DENY"
+    
+    # CSP (Content Security Policy) beállítása
+    Header always set Content-Security-Policy "frame-ancestors 'none'; default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; img-src 'self' data: https://*; connect-src 'self' https://formsubmit.co; font-src 'self' https://cdnjs.cloudflare.com"
+</IfModule>
+
