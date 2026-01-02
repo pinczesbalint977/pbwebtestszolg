@@ -381,3 +381,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 })();
 
+
+
+
+/*
+
+const video = document.getElementById("introVideo");
+const intro = document.getElementById("intro");
+const site = document.getElementById("site");
+
+video.addEventListener("ended", () => {
+  intro.classList.add("blur");
+
+  setTimeout(() => {
+    intro.remove();
+    site.classList.remove("hidden");
+
+    // itt indíthatod az oldal animációit
+    document.body.classList.add("loaded");
+  }, 1000); // blur ideje
+});
+
+*/
